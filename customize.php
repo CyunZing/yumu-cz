@@ -96,7 +96,7 @@ function the_content_nofollow($content){
     if($matches){
         foreach($matches[2] as $val){
             if(strpos($val,'://')!==false && strpos($val,home_url())===false && !preg_match('/\.(jpg|jepg|png|ico|bmp|gif|tiff|zip|rar|exe|dmg|7z|svg|mp3|mp4|avi|3gp|webp)/i',$val)){
-                $content=str_replace("href=\"$val\"", "href=\""."https://link.yumus.cn/aq/?url=".base64_encode($val)."\" rel=\"nofollow\" target=\"_blank\"",$content);
+                $content=str_replace("href=\"$val\"", "href=\""."/go/?url=".base64_encode($val)."\" rel=\"nofollow\" target=\"_blank\"",$content);
             }
         }
     }

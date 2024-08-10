@@ -1,4 +1,4 @@
-    <footer class="site-footer">
+<footer class="site-footer">
         <div class="container">
             <ul class="footer-nav-list flex">
                 <?php wp_nav_menu(['container'=>false,'items_wrap'=>'%3$s','theme_location'=>'footer-menu']);?>
@@ -11,9 +11,11 @@
                 <?php wp_list_bookmarks('title_li=&categorize=0&show_images=0&category=17'); ?>
             </ul>
             <div class="Copyright flex">
-                <span>Copyright <script>document.currentScript.insertAdjacentHTML('afterEnd',new Date().getFullYear())</script> <a href="<?php bloginfo('url');?>"><?php echo get_bloginfo('name')?></a>&nbsp;&nbsp;<a rel="nofollow" target="_blank" href="http://beian.miit.gov.cn">京ICP备**********号</a></span>
-                <!-- 保留版权是对作者最大的尊重，介意者请勿使用，在此画个圈圈诅咒删除版权者 -->
-                <span><a rel="nofollow" target="_blank" href="http://cn.wordpress.org">基于WordPress</a>&nbsp;|&nbsp;<a href="https://www.yumus.cn" target = "_blank">语幕主题</a></span>
+                <span>Copyright <script>document.currentScript.insertAdjacentHTML('afterEnd',new Date().getFullYear())</script> 
+                <a href="<?php bloginfo('url');?>"><?php echo get_bloginfo('name')?></a>
+                &nbsp;&nbsp;
+                <?php echo cn_icp() ;?>
+                <span>基于WordPress&nbsp;|&nbsp;<a href="https://github.com/cyunzing/yumu-cz" target = "_blank">YUMU-CZ</a></span>
             </div>
         </div>
     </footer>

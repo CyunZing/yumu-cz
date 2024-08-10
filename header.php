@@ -10,7 +10,7 @@
     <meta name="renderer" content="webkit"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
-    <meta content="九凌少子" name="author"/>
+    <meta content="Cyunzing" name="author"/>
     <meta name="format-detection" content="address=no"/>
     <meta name='robots' content='max-image-preview:large'/>
     <title><?php if(is_search()){$title = $s.' - '.get_bloginfo( 'name' );}else{$title = seo_title();}echo $title;?></title>
